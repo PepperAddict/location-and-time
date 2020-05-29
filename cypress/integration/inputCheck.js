@@ -23,7 +23,7 @@ describe("Enter Different Locations", function() {
     })
 
     it("enter a full city", () => {
-        cy.get('input[name=location]').clear().type("Detroit, MI, USA")
+        cy.get('input[name=location]').clear().type("Detroit, MI, US")
         cy.get(".locationLookup").click()
         cy.get(".weatherInfoContainer").should('be.visible')
     })
